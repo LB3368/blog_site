@@ -1,0 +1,94 @@
+:root {
+    --bg: #d6d6e0;
+    --section-bg: #eeeeee;
+    --header-color: #2f526c;
+    --text-color: #9a99b8;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    width: 100%;
+    /* root variables (look at the top of the file) */
+    background-color: var(--bg);
+    text-align: center;
+  }
+  
+  main {
+    width: 92%;
+    margin: 0 auto;
+    background-color: white;
+    margin-top: 2%
+  }
+  
+  .title {
+    height: 100px;
+    /* set up to center the child (h1) */
+    position: relative;
+  }
+  
+  h1 {
+    margin-top: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* truly centers a div with a container that is position relative */
+    transform: translate(-50%, -50%); 
+    color: var(--header-color)
+  }
+  
+  
+  img {
+    width:70vw;
+    border-radius: 10%;
+    border-color: #9a99c5;
+  }
+  
+  section {
+    background-color: var(--section-bg);
+    padding: 10px;
+    margin-top: 5px;
+  }
+  
+  h2 {
+    color: var(--header-color);
+    text-shadow: #d6d6e0;
+  }
+  
+  nav, ol {
+    text-align: left;
+    list-style-position: inside;
+    /* margin-left: 40px */
+    margin: 10px 0 10px 20px;
+    /* margin: top right bottom left */
+  }
+  
+  .article {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    background-color: white;
+    text-align: left;
+    padding: 20px;
+    font-size: 18px;
+    border: 5px solid silver;
+  }
+  
+  h3 {
+    text-align: center;
+    color: var(--text-color);
+    text-shadow: #2f526c;
+  }
+  
+  #footerTitle {
+    margin-top: 3%;
+    color: var(--header-color)
+  }
+  
+  ol {
+    padding-bottom: 3%;
+  }
